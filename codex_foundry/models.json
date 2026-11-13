@@ -1,0 +1,184 @@
+{
+  "models": [
+    {
+      "slug": "gpt-5.6-luna",
+      "display_name": "GPT-5.6-Luna (Foundry)",
+      "description": "OpenAI deployment accessed through the Foundry APIM gateway.",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_levels": [
+        { "effort": "low", "description": "Low reasoning effort" },
+        { "effort": "medium", "description": "Medium reasoning effort" },
+        { "effort": "high", "description": "High reasoning effort" },
+        { "effort": "xhigh", "description": "Extra-high reasoning effort" },
+        { "effort": "max", "description": "Maximum reasoning effort" }
+      ],
+      "shell_type": "shell_command",
+      "apply_patch_tool_type": "freeform",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 0,
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "default_reasoning_summary": "none",
+      "supports_reasoning_summary_parameter": true,
+      "context_window": 272000,
+      "input_modalities": ["text"],
+      "truncation_policy": { "mode": "tokens", "limit": 10000 },
+      "experimental_supported_tools": [],
+      "upgrade": null,
+      "model_messages": {
+        "instructions_template": "You are a coding assistant. Inspect relevant project files, follow repository instructions, make focused changes, and validate your work. Explain failures clearly and ask before destructive actions."
+      }
+    },
+    {
+      "slug": "gpt-5.6-sol",
+      "display_name": "GPT-5.6-Sol (Foundry)",
+      "description": "OpenAI deployment accessed through the Foundry APIM gateway.",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_levels": [
+        { "effort": "low", "description": "Low reasoning effort" },
+        { "effort": "medium", "description": "Medium reasoning effort" },
+        { "effort": "high", "description": "High reasoning effort" },
+        { "effort": "xhigh", "description": "Extra-high reasoning effort" },
+        { "effort": "max", "description": "Maximum reasoning effort" }
+      ],
+      "shell_type": "shell_command",
+      "apply_patch_tool_type": "freeform",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 1,
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "default_reasoning_summary": "none",
+      "supports_reasoning_summary_parameter": true,
+      "context_window": 272000,
+      "input_modalities": ["text"],
+      "truncation_policy": { "mode": "tokens", "limit": 10000 },
+      "experimental_supported_tools": [],
+      "upgrade": null,
+      "model_messages": {
+        "instructions_template": "You are a coding assistant. Inspect relevant project files, follow repository instructions, make focused changes, and validate your work. Explain failures clearly and ask before destructive actions."
+      }
+    },
+    {
+      "slug": "gpt-5.6-terra",
+      "display_name": "GPT-5.6-Terra (Foundry)",
+      "description": "OpenAI deployment accessed through the Foundry APIM gateway.",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_levels": [
+        { "effort": "low", "description": "Low reasoning effort" },
+        { "effort": "medium", "description": "Medium reasoning effort" },
+        { "effort": "high", "description": "High reasoning effort" },
+        { "effort": "xhigh", "description": "Extra-high reasoning effort" },
+        { "effort": "max", "description": "Maximum reasoning effort" }
+      ],
+      "shell_type": "shell_command",
+      "apply_patch_tool_type": "freeform",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 2,
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "default_reasoning_summary": "none",
+      "supports_reasoning_summary_parameter": true,
+      "context_window": 272000,
+      "input_modalities": ["text"],
+      "truncation_policy": { "mode": "tokens", "limit": 10000 },
+      "experimental_supported_tools": [],
+      "upgrade": null,
+      "model_messages": {
+        "instructions_template": "You are a coding assistant. Inspect relevant project files, follow repository instructions, make focused changes, and validate your work. Explain failures clearly and ask before destructive actions."
+      }
+    },
+    {
+      "slug": "gpt-6-astra",
+      "display_name": "GPT-6-Astra (Foundry)",
+      "description": "OpenAI deployment accessed through the Foundry APIM gateway.",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_levels": [
+        { "effort": "low", "description": "Low reasoning effort" },
+        { "effort": "medium", "description": "Medium reasoning effort" },
+        { "effort": "high", "description": "High reasoning effort" },
+        { "effort": "xhigh", "description": "Extra-high reasoning effort" },
+        { "effort": "max", "description": "Maximum reasoning effort" }
+      ],
+      "shell_type": "shell_command",
+      "apply_patch_tool_type": "freeform",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 3,
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "default_reasoning_summary": "none",
+      "supports_reasoning_summary_parameter": true,
+      "context_window": 272000,
+      "input_modalities": ["text"],
+      "truncation_policy": { "mode": "tokens", "limit": 10000 },
+      "experimental_supported_tools": [],
+      "upgrade": null,
+      "model_messages": {
+        "instructions_template": "You are a coding assistant. Inspect relevant project files, follow repository instructions, make focused changes, and validate your work. Explain failures clearly and ask before destructive actions."
+      }
+    },
+    {
+      "slug": "gpt-6-luna",
+      "display_name": "GPT-6-Luna (Foundry)",
+      "description": "OpenAI deployment accessed through the Foundry APIM gateway.",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_levels": [
+        { "effort": "low", "description": "Low reasoning effort" },
+        { "effort": "medium", "description": "Medium reasoning effort" },
+        { "effort": "high", "description": "High reasoning effort" },
+        { "effort": "xhigh", "description": "Extra-high reasoning effort" },
+        { "effort": "max", "description": "Maximum reasoning effort" }
+      ],
+      "shell_type": "shell_command",
+      "apply_patch_tool_type": "freeform",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 4,
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "default_reasoning_summary": "none",
+      "supports_reasoning_summary_parameter": true,
+      "context_window": 272000,
+      "input_modalities": ["text"],
+      "truncation_policy": { "mode": "tokens", "limit": 10000 },
+      "experimental_supported_tools": [],
+      "upgrade": null,
+      "model_messages": {
+        "instructions_template": "You are a coding assistant. Inspect relevant project files, follow repository instructions, make focused changes, and validate your work. Explain failures clearly and ask before destructive actions."
+      }
+    },
+    {
+      "slug": "gpt-6.1-sol",
+      "display_name": "GPT-6.1-Sol (Foundry)",
+      "description": "OpenAI deployment accessed through the Foundry APIM gateway.",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_levels": [
+        { "effort": "low", "description": "Low reasoning effort" },
+        { "effort": "medium", "description": "Medium reasoning effort" },
+        { "effort": "high", "description": "High reasoning effort" },
+        { "effort": "xhigh", "description": "Extra-high reasoning effort" },
+        { "effort": "max", "description": "Maximum reasoning effort" }
+      ],
+      "shell_type": "shell_command",
+      "apply_patch_tool_type": "freeform",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 5,
+      "support_verbosity": true,
+      "default_verbosity": "low",
+      "default_reasoning_summary": "none",
+      "supports_reasoning_summary_parameter": true,
+      "context_window": 272000,
+      "input_modalities": ["text"],
+      "truncation_policy": { "mode": "tokens", "limit": 10000 },
+      "experimental_supported_tools": [],
+      "upgrade": null,
+      "model_messages": {
+        "instructions_template": "You are a coding assistant. Inspect relevant project files, follow repository instructions, make focused changes, and validate your work. Explain failures clearly and ask before destructive actions."
+      }
+    }
+  ]
+}

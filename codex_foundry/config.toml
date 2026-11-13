@@ -1,0 +1,24 @@
+model = "gpt-5.6-luna"
+model_provider = "foundry-apim"
+model_catalog_json = '<full_path_to_models.json>'
+model_reasoning_effort = "medium"
+
+[model_providers.foundry-apim]
+name = "Microsoft Foundry via APIM"
+base_url = "https://xxxxxxx.azure-api.net/openai/v1"
+wire_api = "responses"
+requires_openai_auth = false
+supports_websockets = false
+
+[model_providers.foundry-apim.capabilities]
+remote_compaction = "unsupported"
+
+[model_providers.foundry-apim.gateway_oauth]
+authorization_url = "https://login.microsoftonline.com/xxxxxxxxx/oauth2/v2.0/authorize"
+token_url = "https://login.microsoftonline.com/xxxxxxxxx/oauth2/v2.0/token"
+client_id = "xxxxxxxxxx"
+scopes = [
+  "api://xxxxxxxxxx/Codex.Access",
+  "offline_access",
+]
+redirect_port = 43127

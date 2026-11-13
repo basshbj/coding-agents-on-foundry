@@ -1,0 +1,20 @@
+# Python environment and test caches
+/.venv/
+/tests/**/__pycache__/
+/tests/**/apim_connection.json
+
+# Test outputs
+/tests/codex_test/output/
+/tests/codex_test/output_*/
+/tests/codex_test/results*.csv
+
+# Terraform working files and local configuration
+.terraform/
+azure_infra/src/**/*.tfstate
+azure_infra/src/**/*.tfstate.*
+azure_infra/src/**/*.tfplan
+azure_infra/src/**/terraform.tfvars
+azure_infra/src/**/*.auto.tfvars
+azure_infra/src/**/*.auto.tfvars.json
+azure_infra/src/**/crash.log
+azure_infra/src/**/crash.*.log

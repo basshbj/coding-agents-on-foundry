@@ -1,0 +1,43 @@
+# Copy to terraform.tfvars and replace all placeholders before planning.
+subscription_id = "REPLACE_WITH_SUBSCRIPTION_ID"
+tenant_id       = "REPLACE_WITH_TENANT_ID"
+name_prefix     = "codex-demo-unique"
+location        = "eastus2"
+
+# A NEW resource group is always created. Null derives <name_prefix>-rg.
+resource_group_name = null
+apim_sku_name       = "StandardV2_1"
+publisher_name      = "Example organization"
+publisher_email     = "azure-admin@example.com"
+
+# Authorize existing users by email and/or security groups by exact display name.
+allowed_user_emails = ["developer@example.com"]
+allowed_group_names = []
+# Object IDs remain optional for users/groups that cannot be resolved uniquely.
+allowed_principal_object_ids = []
+oauth_redirect_port = 43127
+requests_per_minute = 60
+log_retention_days  = 30
+
+# One deployment per model; names are lowercased for Azure and Codex.
+# Azure selects the default version. Verify model availability and quota.
+models = [
+  "GPT-6.1-Sol",
+  "GPT-6.1-Terra",
+  "GPT-6-Astra",
+  "GPT-6-Luna",
+  "GPT-5.6-Sol",
+  "GPT-5.6-Terra",
+  "GPT-5.6-Luna",
+]
+
+# Shared plan and capacity for every model in the list.
+# GlobalStandard may process data outside the resource region.
+# Capacity units depend on the selected model/SKU; check Azure quota documentation.
+model_deployment_sku_name = "GlobalStandard"
+model_deployment_capacity = 1
+
+tags = {
+  environment = "dev"
+  workload    = "codex-foundry"
+}
